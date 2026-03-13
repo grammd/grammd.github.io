@@ -1,8 +1,11 @@
 # mi472-website
-Hosts website &amp; template
+Hosts website template
+
+Work in Progress
 
 
 https://grammd.github.io/
 
-Formspree form working
+For SS2026 MI372-001 Digital Business and Commerce 
+
 
