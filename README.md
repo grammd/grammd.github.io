@@ -1,8 +1,8 @@
-# mi472-website
-Hosts website template
+# MI472 Website Project
 
-Work in Progress
+This repository hosts the website/template through Github pages.
 
+*Work in Progress*
 
 https://grammd.github.io/
 
