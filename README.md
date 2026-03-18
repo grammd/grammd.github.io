@@ -24,7 +24,7 @@ This repository hosts my website through Github Pages.
 
  For SS2026 MI372-001 Digital Business and Commerce
 
- Credit to Goran Babarogic for the template.
+ Credit to [Goran Babarogic](https://www.framer.com/@babarogic/) for the template.
 
 Dominic Grammatico
 
