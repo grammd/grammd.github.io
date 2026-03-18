@@ -14,12 +14,6 @@ This repository hosts my website through Github Pages.
 * Site speed will be improved iteratively over time.
 
 
-
-## Additional Elements: 
-
-![App Screenshot](https://dummyimage.com/468x300?text=App+Screenshot+Here)
-
-
 ## Acknowledgements:
 
  For SS2026 MI372-001 Digital Business and Commerce
