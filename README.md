@@ -4,7 +4,7 @@
 
 This repository hosts my website through Github Pages.
 
-Work in Progress
+*Work in Progress*
 
 
 ## Notes:
@@ -13,10 +13,6 @@ Work in Progress
 
 * Site speed will be improved iteratively over time.
 
-
-
-
-## Access:
 
 
 ## Additional Elements: 
