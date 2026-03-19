@@ -13,6 +13,7 @@ This repository hosts my website through Github Pages.
 
 * Site speed will be improved iteratively over time.
 
+HTML from template default, JS from template custom. Inverse if needed.
 
 ## Acknowledgements:
 
