@@ -15,6 +15,8 @@ This repository hosts my website through Github Pages.
 
 HTML from template default, JS from template custom. Inverse if needed.
 
+Current: JS from default template; HTML from custom.
+
 ## Acknowledgements:
 
  For SS2026 MI372-001 Digital Business and Commerce
