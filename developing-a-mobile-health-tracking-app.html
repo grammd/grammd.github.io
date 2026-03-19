@@ -20,9 +20,20 @@ a[href*="framer.com/@babarogic"] {
   position: absolute !important;
   pointer-events: none !important;
 }
+/* Force-hide Framer EditorBar floating widget */
+#__framer-editorbar,
+#__framer-editorbar-container,
+iframe#__framer-editorbar {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
 </style>
     <script>
-(function(){function r(){try{document.querySelectorAll('[class*="r70m3d"], a[href*="nicey.studio"], a[data-framer-name="Nicey Studio"]').forEach(function(e){var c=e.closest('.framer-r70m3d-container');if(c)c.remove();else{var t=e.closest('[class*="r70m3d"]');if(t)t.remove();else if(e.matches&&(e.matches('a[data-framer-name="Nicey Studio"]')||e.matches('a[href*="nicey.studio"]'))){var p=e.closest('p');if(p)p.remove()}}})}catch(n){}}function i(){r();if(document.body&&typeof MutationObserver!=='undefined')new MutationObserver(r).observe(document.body,{childList:!0,subtree:!0})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',i):i()})();
+(function(){function r(){try{document.querySelectorAll('[class*="r70m3d"], a[href*="nicey.studio"], a[data-framer-name="Nicey Studio"]').forEach(function(e){var c=e.closest('.framer-r70m3d-container');if(c)c.remove();else{var t=e.closest('[class*="r70m3d"]');if(t)t.remove();else if(e.matches&&(e.matches('a[data-framer-name="Nicey Studio"]')||e.matches('a[href*="nicey.studio"]'))){var p=e.closest('p');if(p)p.remove()}}});var eb=document.getElementById('__framer-editorbar');if(eb)eb.remove();var ebc=document.getElementById('__framer-editorbar-container');if(ebc)ebc.remove()}catch(n){}}function i(){r();if(document.body&&typeof MutationObserver!=='undefined')new MutationObserver(r).observe(document.body,{childList:!0,subtree:!0})}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',i):i()})();
 </script>
     <!-- End of headStart -->
     <meta name="viewport" content="width=device-width">
@@ -577,7 +588,8 @@ a[href*="framer.com/@babarogic"] {
 }
 </style><style>
 #__framer-editorbar {
-    /* https://sergeyski.com/css-color-scheme-and-iframes-lessons-learned-from-disqus-background-bug */
+    display: none !important;
+    visibility: hidden !important;
     color-scheme: light dark;
     overflow: hidden;
     position: fixed;
@@ -585,8 +597,8 @@ a[href*="framer.com/@babarogic"] {
     z-index: calc(2147483647);
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 0;
+    height: 0;
     touch-action: manipulation;
 }
 
