@@ -20,9 +20,9 @@ jobs:
             "redux"
           )
           for branch in "${branches[@]}"; do
-            if gh api repos/${{ github.repository }}/git/refs/heads/${branch} &>/dev/null; then
+            if gh api "repos/${{ github.repository }}/git/refs/heads/${branch}" &>/dev/null; then
               echo "Deleting branch: ${branch}"
-              gh api --method DELETE repos/${{ github.repository }}/git/refs/heads/${branch}
+              gh api --method DELETE "repos/${{ github.repository }}/git/refs/heads/${branch}"
               echo "Deleted: ${branch}"
             else
               echo "Branch not found (may already be deleted): ${branch}"
