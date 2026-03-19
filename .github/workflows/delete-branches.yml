@@ -1,0 +1,30 @@
+name: Delete Stale Branches
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  delete-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete stale branches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branches=(
+            "copilot/move-js-files-to-root"
+            "copilot/sync-main-with-redux"
+            "redux"
+          )
+          for branch in "${branches[@]}"; do
+            if gh api "repos/${{ github.repository }}/git/refs/heads/${branch}" &>/dev/null; then
+              echo "Deleting branch: ${branch}"
+              gh api --method DELETE "repos/${{ github.repository }}/git/refs/heads/${branch}"
+              echo "Deleted: ${branch}"
+            else
+              echo "Branch not found (may already be deleted): ${branch}"
+            fi
+          done
