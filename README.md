@@ -13,8 +13,6 @@ This repository hosts my website through Github Pages.
 
 * Site speed will be improved iteratively over time.
 
-* **After Framer sync:** Run `python3 scripts/remove-footer-cta.py` to remove the footer CTA container ("Upgrade your web presence with Framer" / Contra promo). This script updates both the runtime and SSR HTML.
-
 
 ## Acknowledgements:
 
